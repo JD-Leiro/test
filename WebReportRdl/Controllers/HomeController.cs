@@ -50,6 +50,7 @@ namespace WebReportRdl.Controllers
             string webRootPath = _webHostEnvironment.WebRootPath;
             string contentRootPath = _webHostEnvironment.ContentRootPath;
             string a = "";
+            string b = "";
             //string path = "";
             //path = Path.Combine(webRootPath, "AgentesCercanosAdminPDF.rdl");
             //or path = Path.Combine(contentRootPath , "wwwroot" ,"CSS" );
@@ -98,6 +99,7 @@ namespace WebReportRdl.Controllers
             //    {"Semana", "32" },
             //    {"TotalVisitas", "4" },
             //};
+            string z = "prueba Git";
             var rpt = localReport.Execute(RenderType.Pdf);
             return File(rpt.MainStream, "application/pdf");
         }
