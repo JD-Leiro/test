@@ -99,6 +99,7 @@ namespace WebReportRdl.Controllers
             //    {"Semana", "32" },
             //    {"TotalVisitas", "4" },
             //};
+            string z = "prueba Git";
             var rpt = localReport.Execute(RenderType.Pdf);
             return File(rpt.MainStream, "application/pdf");
         }
